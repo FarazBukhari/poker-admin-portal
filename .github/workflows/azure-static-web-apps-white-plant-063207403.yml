@@ -43,3 +43,7 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WHITE_PLANT_063207403 }}
           action: "close"
+        env: # Add environment variables here
+          REACT_APP_VERSION: "v3.6.0"
+          GENERATE_SOURCEMAP: "false"
+          REACT_APP_API_URL: "http://localhost:8080/api/v1"
